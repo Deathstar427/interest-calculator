@@ -3,8 +3,10 @@
 
 int main()
 { int choice,i;
+    int x;
     double p,r,t,z,m,principle;
-
+    x = 10;
+    printf("%d",x);
     printf("enter principal");
     scanf("%lf",&p);
      printf("enter rate");
