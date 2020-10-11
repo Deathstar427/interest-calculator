@@ -36,6 +36,7 @@ int main()
                 printf("%lf \n",z);
                 printf("final principal amount after %2.1lf years:",t);
                 printf("%.3lf",principle+z);
+                printf("good program");
                 break;
 
     }
