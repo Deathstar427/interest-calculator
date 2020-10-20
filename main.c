@@ -1,19 +1,34 @@
- #include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 
 int main()
-{ int choice,i;
+{
+    int choice,i;
     double p,r,t,z,m,principle;
 
-    printf("enter principal");
-    scanf("%lf",&p);
-     printf("enter rate");
-    scanf("%lf",&r);
-     printf("enter time");
-    scanf("%lf",&t);
+    do
+    {
+        printf("enter principal");
+        scanf("%lf",&p);
+    }while(p<0);
 
-    printf("enter choice: 0 for simple interest,1 for compound \n");
-    scanf("%d",&choice);
+    do
+    {
+        printf("enter rate");
+        scanf("%lf",&r);
+    }while(r<0);
+
+
+    do{
+        printf("enter time");
+        scanf("%lf",&t);
+    }while(t<0);
+
+    do{
+        printf("enter choice: 0 for simple interest,1 for compound \n");
+        scanf("%d",&choice);
+    }while(choice!=0 && choice!=1);
+
     switch(choice)
     {
         case 0: printf("simple interest is \n");
